@@ -11,7 +11,7 @@ function App() {
   const token = localStorage.getItem("token");
   return (
     <div className="w-screen h-screen bg-gradient-to-r from-cyan-700 ">
-      <BrowserRouter basename="/web2">
+      <BrowserRouter>
         <Routes>
           <Route
             path="/chatapp"
