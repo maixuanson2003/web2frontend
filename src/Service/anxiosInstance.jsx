@@ -1,6 +1,6 @@
 import axios from "axios";
 const AnxiosInstance = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://web2-2nde.onrender.com",
   headers: {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",

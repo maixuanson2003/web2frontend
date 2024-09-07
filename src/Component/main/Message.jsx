@@ -11,7 +11,7 @@ const Message = ({ GroupId }) => {
   const username = localStorage.getItem("username");
 
   useEffect(() => {
-    const socket = new SockJS("http://localhost:8080/chat");
+    const socket = new SockJS("https://web2-2nde.onrender.com/chat");
     const client = Stomp.over(socket);
     client.connect(
       {},
