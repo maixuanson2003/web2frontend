@@ -5,13 +5,18 @@ import Login from "./Component/auth/Login";
 import { useState } from "react";
 import PrivateRoute from "./Component/auth/PrivateRoute";
 import ChatApp from "./Component/main/ChatApp";
-import { BrowserRouter, Routes, Navigate, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Navigate,
+  Route,
+} from "react-router-dom";
 
 function App() {
   const token = localStorage.getItem("token");
   return (
     <div className="w-screen h-screen bg-gradient-to-r from-cyan-700 ">
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route
             path="/chatapp"
@@ -26,7 +31,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
